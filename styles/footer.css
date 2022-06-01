@@ -1,0 +1,373 @@
+@charset "UTF-8";
+footer {
+  background: #111316;
+  position: relative;
+}
+
+footer::after {
+  background: url("../img/background_footer-image.webp");
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+footer::before {
+  background: url("../img/transition_2-min.webp");
+  content: "";
+  top: -340px;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
+}
+
+.footer__wrapper {
+  width: 85vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 999;
+  padding: 442px 0 0 0;
+}
+
+.footer__wrapper h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.footer__wrapper h5 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.header__button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #515151;
+  text-decoration: none;
+  text-align: center;
+  padding: 24px 56px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: 2px;
+  top: 0px;
+}
+
+.header__button-main {
+  position: relative;
+}
+
+.header__button-main:hover {
+  opacity: 0.9;
+}
+
+.footer__main-timer {
+  padding-top: 36px;
+}
+
+.footer__time-text {
+  font-family: 'Century Gothic';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*         цифры таймера         */
+.uncorrectDays, .uncorrectHours,
+.uncorrectMinutes, .uncorrectSeconds {
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__timer-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 98px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/*      блоки хранящие цифры      */
+.days-block, .hours-block, .minutes-block, .seconds-block {
+  margin: 10px;
+  padding: 5px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer-section {
+  display: inline-block;
+  text-align: center;
+}
+
+.timer-text {
+  display: block;
+  font-size: 12px;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 28px 0;
+}
+
+.footer__info div {
+  text-align: center;
+}
+
+.footer__info-text-made {
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.footer__info-text {
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.footer__info-text a {
+  color: #FFFFFF;
+}
+
+.footer__competition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 28px;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.footer_marathon {
+  width: auto;
+  position: absolute;
+  right: 181px;
+}
+
+.footer_marathon::after {
+  background: url("../img/arrow.svg");
+  content: "";
+  top: 59px;
+  right: 169px;
+  position: absolute;
+  width: 109px;
+  height: 24px;
+}
+
+.footer__marathon-text {
+  width: 164px;
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.footer__marathon-price {
+  position: absolute;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 22px;
+  width: 64.51px;
+  padding: 3px;
+  text-align: center;
+  right: -58px;
+  top: -32px;
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+  color: #FFFFFF;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: red;
+  text-decoration-color: red;
+}
+
+@media (max-width: 1275px) {
+  .footer_marathon {
+    right: 41px;
+  }
+}
+
+@media (max-width: 945px) {
+  .footer__competition {
+    margin-bottom: 126px;
+  }
+  .footer_marathon {
+    right: 0;
+  }
+  .footer__marathon-price {
+    left: 148px;
+    top: 39px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 796px) {
+  .footer__competition {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .footer_marathon {
+    left: 124px;
+    top: 132px;
+  }
+}
+
+@media (max-width: 795px) {
+  .footer__wrapper h1 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .footer__wrapper h5 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__time-text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .footer__timer-text {
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .timer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .days-block, .hours-block, .minutes-block, .seconds-block {
+    height: 35px;
+  }
+  .footer__timer-text-intro {
+    margin-top: -26px;
+  }
+  .footer__info div {
+    width: 100%;
+    margin: 18px 0;
+  }
+  .footer__info-text-made {
+    text-align: center;
+  }
+  .footer_marathon {
+    left: 166px;
+  }
+  .footer_marathon::after {
+    width: 39px;
+    height: 47px;
+    top: -30px;
+    left: 176px;
+    background: url("../img/arrow_3-mobile.png");
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_marathon {
+    left: 66px;
+  }
+}
+
+@media (max-width: 440px) {
+  footer::before {
+    background: url("../img/transition_2-mobile-min.webp");
+    top: -256px;
+    height: 437px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer_marathon {
+    left: 0;
+  }
+  .footer_marathon::after {
+    right: 101px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__competition {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer_marathon {
+    top: 229px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

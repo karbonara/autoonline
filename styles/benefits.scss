@@ -1,0 +1,161 @@
+.benefits {
+    background: #111316;
+    position: relative;
+    position: relative;
+    &::after {
+        background: url("../img/background_benefist-image.webp");
+        content: "";
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 1080px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+    }
+}
+.benefits__wrapper {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 140px 0 137px 0;
+    position: relative;
+    z-index: 9999;
+}
+.benefits__tire {
+    position: absolute;
+    top: 2400px;
+    right: 0px;
+    width: 148px;
+    height: 173px;
+    background: url('../img/tire.webp');
+}
+.benefits__cone {
+    position: absolute;
+    top: 1100px;
+    left: 0px;
+    width: 160px;
+    height: 174px;
+    background: url('../img/cone-benefits.webp');
+}
+.benefits__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+.benefits__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+.benefist__text-intro {
+    font-family: 'Century Gothic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 53px 0 0 0;
+    padding: 0 300px;
+}
+.benefits__items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 135px 0 88px 0;
+}
+.benefits__item {
+    width: 438px;
+    height: 263px;
+    padding: 18px;
+    box-sizing: border-box;
+    background: #E1E1E1;
+    border-radius: 11px;
+    & h3 {
+        font-family: 'Century Gothic';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #4B4B4B
+    }
+    & p {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4B4B4B;
+    }
+}
+.benefits__item-two {
+    margin-top: 82px;
+}
+@media (max-width: 1070px) {
+    .benefits__items {
+        flex-wrap: wrap;
+    }
+    .benefist__text-intro {
+        padding: 0;
+    }
+    .benefits__tire {
+        top: 3100px;
+    }
+    .benefits__cone {
+        top: 1900px;
+    }
+}
+@media (max-width: 760px) {
+    .benefist__text-intro {
+        padding: 0;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .benefits__title {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .benefits__text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .benefits__item {
+        height: 190px;
+        & h3 {
+            font-size: 12.5px;
+            line-height: 15px;
+        }
+        & p {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    .benefits__tire {
+        top: 4300px;
+        right: 0px;
+        width: 64px;
+        height: 76px;
+        z-index: 999;
+        background: url('../img/tire-mobile.webp');
+    }
+    .benefits__cone {
+        top: 1700px;
+        left: -57px;
+        width: 85px;
+        height: 107px;
+        z-index: 999;
+        background: url('../img/cone-benefits-mobile.webp');
+    }
+}
